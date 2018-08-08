@@ -6,7 +6,7 @@ import numpy as np
 file = cv2.VideoCapture("lane_test.mp4")
 
 # color range for color filtering
-low_yellow = np.array([18, 94, 140])
+lower_yellow = np.array([18, 94, 140])
 upper_yellow = np.array([48, 255, 255])
 
 # process video frame
@@ -23,7 +23,7 @@ while True:
     # convert to HSV color space to extract pixel intensity
     hsv = cv2.cvtColor(blur_frame, cv2.COLOR_BGR2HSV)
     # create mask using color range
-    mask = cv2.inRange(hsv, low_yellow, upper_yellow)
+    mask = cv2.inRange(hsv, lower_yellow, upper_yellow)
     # canny edge detection to find the edges of the lanes
     canny_edge = cv2.Canny(mask, 75, 150)
 
