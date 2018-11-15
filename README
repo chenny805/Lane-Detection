@@ -1,0 +1,36 @@
+README
+
+To Run Program you will need to:
+1) install Python 3
+2) install OpenCV tool box
+3) download test videos from Dropbox
+
+
+
+1) To install Python 3:
+  Installation instructions:
+  https://realpython.com/installing-python/
+  
+ 
+2) To install OpenCV:
+  Installation instructions:
+  https://docs.opencv.org/3.1.0/d5/de5/tutorial_py_setup_in_windows.html
+  
+3) To download test videos from Dropbox:
+  Go to the following Dropbox link to download videos:
+  https://www.dropbox.com/sh/zw2uo1v50djj99z/AAAENlWbKJv3jBXajvdYWzlva?dl=0
+  
+  
+  
+  
+TO RUN PROGRAM:
+Please match the appropriate video to file. 
+
+- Main.py ---> lane_test.mp4
+- ROI.py ---> lane_test2.mp4
+- Motocycle.py ---> motocycle.mp4
+
+*Make sure the correct video file name is in the parameters:
+
+  file = cv2.VideoCapture("motocycle.mp4")*
+
